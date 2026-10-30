@@ -1,0 +1,32 @@
+# Build
+target/
+test-output/
+*.class
+*.jar
+*.war
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# Framework outputs
+logs/
+reports/
+screenshots/
+
+# Secrets — never commit credentials
+credentials.properties
+.env
+*.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+release.properties

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Healthcare Hybrid Suite" parallel="false" verbose="1">
+    <listeners>
+        <listener class-name="com.healthcare.automation.listeners.TestListener"/>
+        <listener class-name="com.healthcare.automation.listeners.SuiteListener"/>
+    </listeners>
+    <test name="Login Tests">
+        <classes>
+            <class name="com.healthcare.automation.tests.LoginTests"/>
+        </classes>
+    </test>
+    <test name="Receptionist Tests">
+        <classes>
+            <class name="com.healthcare.automation.tests.ReceptionistTests"/>
+        </classes>
+    </test>
+    <test name="Billing Staff Tests">
+        <classes>
+            <class name="com.healthcare.automation.tests.BillingStaffTests"/>
+        </classes>
+    </test>
+    <test name="Receptionist Admin Tests">
+        <classes>
+            <class name="com.healthcare.automation.tests.ReceptionistAdminTests"/>
+        </classes>
+    </test>
+    <test name="Role Permission Tests">
+        <classes>
+            <class name="com.healthcare.automation.tests.RolePermissionTests"/>
+        </classes>
+    </test>
+</suite>
